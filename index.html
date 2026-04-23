@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PAU - Shop Now!</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<!-- Bootstrap Icon -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<!-- CSS link -->
+		<link rel="stylesheet" type="text/css" href="./index.css">
+
+		<!-- Google Fonts for LOGO -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+		<!-- Google Fonts for text -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<!-- Navbar -->
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+		    <div id="navcontainer" class="container">
+		        <a id="logo" class="navbar-brand" href="#">ESPNS.</a>
+
+		        <button id="burger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+		            <span id="navburger" class="navbar-toggler-icon"></span>
+		        </button>
+
+		        <div id="navbarNavAltMarkup" class="collapse navbar-collapse justify-content-center">
+		            <div class="navbar-nav d-flex align-items-center">
+		                <a class="nav-link active mx-3" href="#landing">HOME</a>
+		                <a class="nav-link mx-3" href="#projects">SHOP</a>
+		                <a class="nav-link mx-3" href="#tools">ABOUT</a>
+		                <a class="nav-link mx-3" href="#contact">CONTACT</a>
+		   
+		                </div>
+		            </div>
+		            <div class="d-flex align-items-center ms-lg-3">
+		                <a href="#" class="nav-link px-2">
+		                    <i class="bi bi-person nav-icon"></i>
+		                </a>
+		                <a href="#" class="nav-link px-2">
+		                    <i class="bi bi-bag nav-icon"></i>
+		                </a>
+		                
+		                <button id="themeToggle" class="btn btn-sm ms-2" onclick="toggleTheme()">
+		                    <i id="themeIcon" class="bi bi-moon-stars nav-icon"></i>
+		                </button>
+		        </div>
+		    </div>
+		</nav>
+		<!-- Navbar ends-->
+
+		<!-- Hero Section -->
+		<section class="hero-wrapper">
+			<div id="landingCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+				<div class="carousel-inner">
+					<div class="carousel-item active"><div class="bg-image item-1"></div></div>
+					<div class="carousel-item"><div class="bg-image item-2"></div></div>
+					<div class="carousel-item"><div class="bg-image item-3"></div></div>
+					<div class="carousel-item"><div class="bg-image item-4"></div></div>
+				</div>
+			</div>
+
+			<div class="landing-content d-flex align-items-center justify-content-center text-center">
+				<div class="z-index-top">
+					<h1 class="display-1 fw-bold text-white">Invest in the Art of Time.</h1>
+					<p class="lead text-white">Timeless Heritage. Uncompromising Luxury.</p>
+					<a href="#projects" class="btn btn-outline-light btn-lg">View Collections</a>
+				</div>
+			</div>
+		</section>
+		<!-- Hero Section ends-->
+
+
+		<!-- Featured Items -->
+		<section id="featured" class="py-5 bg-light">
+		  <div class="container">
+		    <h2 class="text-center mb-5 featured-heading">Featured Collection</h2>
+
+		    <div class="row g-4">
+
+		      <!-- ITEM 1 -->
+		      <div class="col-md-3">
+		        <div class="watch-card">
+		          <div class="card-img-container">
+		            <img src="./images/rolex1.png" class="img-primary">
+		            <img src="./images/rolex2.png" class="img-hover">
+		          </div>
+		          <div class="card-body-custom">
+		            <h5>Rolex Daytona</h5>
+		            <p class="price">$31,500</p>
+		            <button class="btn-buy"
+		              data-name="Rolex Daytona"
+		              data-price="$31,500"
+		              data-img="./images/rolex1.png"
+		              data-desc="The Rolex Daytona is a luxury chronograph built for precision and racing heritage.">
+		              View Details
+		            </button>
+		          </div>
+		        </div>
+		      </div>
+
+		      <!-- ITEM 2 -->
+		      <div class="col-md-3">
+		        <div class="watch-card">
+		          <div class="card-img-container">
+		            <img src="./images/rolex3.png" class="img-primary">
+		            <img src="./images/rolex4.png" class="img-hover">
+		          </div>
+		          <div class="card-body-custom">
+		            <h5>Rolex Submariner</h5>
+		            <p class="price">$18,200</p>
+		            <button class="btn-buy"
+		              data-name="Rolex Submariner"
+		              data-price="$18,200"
+		              data-img="./images/rolex3.png"
+		              data-desc="A legendary dive watch known for its durability, water resistance, and timeless design.">
+		              View Details
+		            </button>
+		          </div>
+		        </div>
+		      </div>
+
+		      <!-- ITEM 3 -->
+		      <div class="col-md-3">
+		        <div class="watch-card">
+		          <div class="card-img-container">
+		            <img src="./images/rolex5.png" class="img-primary">
+		            <img src="./images/rolex6.png" class="img-hover">
+		          </div>
+		          <div class="card-body-custom">
+		            <h5>Rolex Datejust</h5>
+		            <p class="price">$15,800</p>
+		            <button class="btn-buy"
+		              data-name="Rolex Datejust"
+		              data-price="$15,800"
+		              data-img="./images/rolex5.png"
+		              data-desc="A classic timepiece combining elegance and functionality with a date display feature.">
+		              View Details
+		            </button>
+		          </div>
+		        </div>
+		      </div>
+
+		      <!-- ITEM 4 -->
+		      <div class="col-md-3">
+		        <div class="watch-card">
+		          <div class="card-img-container">
+		            <img src="./images/rolex7.png" class="img-primary">
+		            <img src="./images/rolex8.png" class="img-hover">
+		          </div>
+		          <div class="card-body-custom">
+		            <h5>GMT-Master II</h5>
+		            <p class="price">$22,100</p>
+		            <button class="btn-buy"
+		              data-name="GMT-Master II"
+		              data-price="$22,100"
+		              data-img="./images/rolex7.png"
+		              data-desc="Designed for travelers, the GMT-Master II allows tracking of multiple time zones with style.">
+		              View Details
+		            </button>
+		          </div>
+		        </div>
+		      </div>
+
+		    </div>
+		  </div>
+		</section>
+
+		<!-- MODAL -->
+		<div id="productModal" class="custom-modal">
+		  <div class="modal-content">
+
+		    <span class="close-btn">&times;</span>
+
+		    <div class="modal-body">
+		      <img id="modal-img" src="" alt="Watch Image">
+
+		      <div class="modal-info">
+		        <h3 id="modal-title"></h3>
+		        <p id="modal-price"></p>
+		        <p id="modal-desc"></p>
+
+		        <button class="btn-add-cart">Add to Cart</button>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+		<!-- Featured Items ends here -->
+
+		<!-- Contact -->
+		<section class="subscribe-section">
+			<div class="subscribe-container">
+				<h2>The Collector’s Archive</h2>
+				<p>
+					Gain priority access to rare acquisitions and private horology events.
+				</p>
+
+				<form class="subscribe-form">
+					<input type="email" placeholder="Your email address" required />
+					<button type="submit">JOIN THE CLUB</button>
+				</form>
+			</div>
+		</section>
+		<!-- Contact ends here -->
+
+		<footer>
+			<footer class="footer">
+			  <div class="footer-container">
+
+			    <!-- BRAND -->
+			    <div class="footer-col brand">
+			      <h2>ESPNS.</h2>
+			      <p>
+			        Precision craftsmanship since 2024.<br>
+			        Designed for those who value timeless elegance and performance.
+			      </p>
+
+			      <div class="footer-gallery">
+			        <div></div>
+			        <div></div>
+			        <div></div>
+			        <div></div>
+			      </div>
+			    </div>
+
+			    <!-- QUICK LINKS -->
+			    <div class="footer-col">
+			      <h4>COLLECTIONS</h4>
+			      <ul>
+			        <li><a href="#">All Watches</a></li>
+			        <li><a href="#">New Arrivals</a></li>
+			        <li><a href="#">Best Sellers</a></li>
+			        <li><a href="#">Limited Edition</a></li>
+			      </ul>
+			    </div>
+
+			    <!-- CUSTOMER SERVICE -->
+			    <div class="footer-col">
+			      <h4>SUPPORT</h4>
+			      <ul>
+			        <li><a href="#">Shipping & Delivery</a></li>
+			        <li><a href="#">Returns & Warranty</a></li>
+			        <li><a href="#">Watch Care Guide</a></li>
+			        <li><a href="#">Contact Us</a></li>
+			      </ul>
+			    </div>
+
+			    <!-- NEWSLETTER -->
+			    <div class="footer-col">
+			      <h4>STAY CONNECTED</h4>
+			      <p>Get exclusive drops and early access to new timepieces.</p>
+
+			      <div class="footer-subscribe">
+			        <input type="email" placeholder="Email Address">
+			        <button>→</button>
+			      </div>
+			    </div>
+
+			  </div>
+
+			  <!-- BOTTOM -->
+			  <div class="footer-bottom">
+			    <p>© 2026 ESPNS. All rights reserved.</p>
+			    <div class="footer-links">
+			      <a href="#">Privacy Policy</a>
+			      <a href="#">Terms of Service</a>
+			    </div>
+			  </div>
+			</footer>
+		</footer>
+
+
+		<!-- External JS -->
+		<script type="text/javascript" src="./index.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	</body>
+</html>
